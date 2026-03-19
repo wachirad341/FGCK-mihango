@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Gospel Churches of Kenya - Mihango</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background: #1a237e;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffd600;
+    }
+    .hero {
+      text-align: center;
+      padding: 6rem 1rem;
+      background: url('https://images.unsplash.com/photo-1606925796090-4fbbd4205b2b?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: #fff;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top:0; left:0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      margin: 0 0.5rem;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn-join {
+      background: #ffd600;
+      color: #1a237e;
+    }
+    .btn-join:hover {
+      background: #ffc107;
+    }
+    .btn-watch {
+      background: #1a237e;
+      color: #fff;
+    }
+    .btn-watch:hover {
+      background: #303f9f;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #1a237e;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-top: 5px solid #1a237e;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .service-card i {
+      font-size: 2rem;
+      color: #1a237e;
+      margin-bottom: 0.5rem;
+    }
+    form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      background: #1a237e;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #303f9f;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      background: #25D366;
+      color: #fff;
+      padding: 0.8rem 1.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      transition: 0.3s;
+    }
+    .whatsapp-btn:hover {
+      background: #1ebe57;
+    }
+    footer {
+      background: #1a237e;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .cta-buttons a {
+        display: block;
+        margin: 0.5rem auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Full Gospel Churches of Kenya - Mihango</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#vision">Vision</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Our Church</h2>
+      <p>Fulfilling God's purpose in our generation</p>
+      <div class="cta-buttons">
+        <a class="btn-join" href="#services">Join Service</a>
+        <a class="btn-watch" href="#contact">Watch Online</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-book"></i>
+        <h3>1st Service / Bible Study</h3>
+        <p>9:30 AM – 10:30 AM</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-church"></i>
+        <h3>2nd Service</h3>
+        <p>10:30 AM – 1:00 PM</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-users"></i>
+        <h3>Fellowships</h3>
+        <p>Midweek Fellowship: Wed 7–8 PM</p>
+        <p>Ladies Prayers: Wed 1–2 PM</p>
+        <p>Ladies Fellowship: 3rd Sunday after 2nd Service</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-video"></i>
+        <h3>Online Services</h3>
+        <p>Tuesday, 8 PM – 9 PM</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-calendar-alt"></i>
+        <h3>Pastor’s Day</h3>
+        <p>Saturday, 10 AM – 4 PM at Pastor’s Office</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="vision">
+    <h2>Our Vision</h2>
+    <p style="text-align:center; font-size:1.2rem;">To fulfill God’s purpose in our generation.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact the Pastor</h2>
+    <form action="mailto:pastor@fgckmihango.org" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Email</button>
+    </form>
+
+    <a class="whatsapp-btn" href="https://wa.me/2547XXXXXXXX?text=Hello%20Pastor" target="_blank">
+      <i class="fab fa-whatsapp"></i> Message on WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Full Gospel Churches of Kenya – Mihango. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
