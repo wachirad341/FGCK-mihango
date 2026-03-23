@@ -1,265 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full Gospel Churches of Kenya - Mihango</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      line-height: 1.6;
-      background-color: #f0f4f8;
-      color: #333;
-    }
-    header {
-      background: #1a237e;
-      color: #fff;
-      padding: 1rem 2rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #ffd600;
-    }
-    .hero {
-      text-align: center;
-      padding: 6rem 1rem;
-      background: url('https://images.unsplash.com/photo-1606925796090-4fbbd4205b2b?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      color: #fff;
-      position: relative;
-    }
-    .hero::after {
-      content: "";
-      position: absolute;
-      top:0; left:0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.5);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    .cta-buttons a {
-      display: inline-block;
-      margin: 0 0.5rem;
-      padding: 1rem 2rem;
-      border-radius: 50px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .btn-join {
-      background: #ffd600;
-      color: #1a237e;
-    }
-    .btn-join:hover {
-      background: #ffc107;
-    }
-    .btn-watch {
-      background: #1a237e;
-      color: #fff;
-    }
-    .btn-watch:hover {
-      background: #303f9f;
-    }
-    section {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    h2 {
-      color: #1a237e;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-    .service-card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 1.5rem;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-      border-top: 5px solid #1a237e;
-    }
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
-    .service-card i {
-      font-size: 2rem;
-      color: #1a237e;
-      margin-bottom: 0.5rem;
-    }
-    form {
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      margin-top: 1rem;
-    }
-    input, textarea, button {
-      width: 100%;
-      padding: 0.8rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    button {
-      background: #1a237e;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #303f9f;
-    }
-    .whatsapp-btn {
-      display: inline-block;
-      background: #25D366;
-      color: #fff;
-      padding: 0.8rem 1.2rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 0.5rem;
-      transition: 0.3s;
-    }
-    .whatsapp-btn:hover {
-      background: #1ebe57;
-    }
-    footer {
-      background: #1a237e;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
-      }
-      .hero h2 {
-        font-size: 2rem;
-      }
-      .hero p {
-        font-size: 1rem;
-      }
-      .cta-buttons a {
-        display: block;
-        margin: 0.5rem auto;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Gospel Churches of Kenya - Mihango</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background: #1a237e;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover { color: #ffd600; }
+
+.hero {
+  text-align: center;
+  padding: 6rem 1rem;
+  background: url('https://images.unsplash.com/photo-1606925796090-4fbbd4205b2b?auto=format&fit=crop&w=1600&q=80') center/cover;
+  color: #fff;
+  position: relative;
+}
+
+.hero::after {
+  content:"";
+  position:absolute;
+  width:100%; height:100%;
+  top:0; left:0;
+  background:rgba(0,0,0,0.5);
+}
+
+.hero-content { position:relative; z-index:1; }
+
+.cta-buttons a {
+  display:inline-block;
+  margin:5px;
+  padding:12px 25px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.btn-join { background:#ffd600; color:#1a237e; }
+.btn-watch { background:#1a237e; color:#fff; }
+
+.live {
+  color:#ff5252;
+  font-weight:bold;
+  display:none;
+}
+
+.countdown {
+  margin-top:10px;
+  font-weight:bold;
+}
+
+section {
+  padding:2rem 1rem;
+  max-width:1000px;
+  margin:auto;
+}
+
+h2 { text-align:center; color:#1a237e; }
+
+.services-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:1rem;
+}
+
+.service-card {
+  background:#fff;
+  padding:1.5rem;
+  border-radius:10px;
+  text-align:center;
+  border-top:5px solid #1a237e;
+}
+
+.join-btn {
+  display:inline-block;
+  margin-top:10px;
+  padding:8px 15px;
+  background:#25D366;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+}
+
+form {
+  background:#fff;
+  padding:1.5rem;
+  border-radius:10px;
+}
+
+input, textarea, button {
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+}
+
+button {
+  background:#1a237e;
+  color:#fff;
+  border:none;
+}
+
+.popup {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#fff;
+  padding:15px;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+  display:none;
+}
+
+footer {
+  background:#1a237e;
+  color:#fff;
+  text-align:center;
+  padding:1rem;
+}
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Full Gospel Churches of Kenya - Mihango</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#vision">Vision</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+<h1>Full Gospel Churches of Kenya - Mihango</h1>
+<nav>
+<a href="#services">Services</a>
+<a href="#vision">Vision</a>
+<a href="#contact">Contact</a>
+<a href="#giving">Giving</a>
+</nav>
+</header>
 
-  <div class="hero">
-    <div class="hero-content">
-      <h2>Welcome to Our Church</h2>
-      <p>Fulfilling God's purpose in our generation</p>
-      <div class="cta-buttons">
-        <a class="btn-join" href="#services">Join Service</a>
-        <a class="btn-watch" href="#contact">Watch Online</a>
-      </div>
-    </div>
-  </div>
+<div class="hero">
+<div class="hero-content">
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <i class="fas fa-book"></i>
-        <h3>1st Service / Bible Study</h3>
-        <p>9:30 AM – 10:30 AM</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-church"></i>
-        <h3>2nd Service</h3>
-        <p>10:30 AM – 1:00 PM</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-users"></i>
-        <h3>Fellowships</h3>
-        <p>Midweek Fellowship: Wed 7–8 PM</p>
-        <p>Ladies Prayers: Wed 1–2 PM</p>
-        <p>Ladies Fellowship: 3rd Sunday after 2nd Service</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-video"></i>
-        <h3>Online Services</h3>
-        <p>Tuesday, 8 PM – 9 PM</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-calendar-alt"></i>
-        <h3>Pastor’s Day</h3>
-        <p>Saturday, 10 AM – 4 PM at Pastor’s Office</p>
-      </div>
-    </div>
-  </section>
+<p id="liveText" class="live">🔴 LIVE NOW - Join Fellowship</p>
 
-  <section id="vision">
-    <h2>Our Vision</h2>
-    <p style="text-align:center; font-size:1.2rem;">To fulfill God’s purpose in our generation.</p>
-  </section>
+<h2>Welcome to Our Church</h2>
+<p>Fulfilling God's purpose in our generation</p>
 
-  <section id="contact">
-    <h2>Contact the Pastor</h2>
-    <form action="mailto:pastor@fgckmihango.org" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Email</button>
-    </form>
+<div class="cta-buttons">
+<a class="btn-join" href="#services">Join Service</a>
+<a class="btn-watch" href="https://meet.google.com/tmj-puzg-jed" target="_blank">
+Join Online Fellowship
+</a>
+</div>
 
-    <a class="whatsapp-btn" href="https://wa.me/2547XXXXXXXX?text=Hello%20Pastor" target="_blank">
-      <i class="fab fa-whatsapp"></i> Message on WhatsApp
-    </a>
-  </section>
+<p id="countdown" class="countdown"></p>
 
-  <footer>
-    <p>&copy; 2026 Full Gospel Churches of Kenya – Mihango. All Rights Reserved.</p>
-  </footer>
+</div>
+</div>
+
+<section id="services">
+<h2>Our Services</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>1st Service / Bible Study</h3>
+<p>9:30 AM – 10:30 AM</p>
+</div>
+
+<div class="service-card">
+<h3>2nd Service</h3>
+<p>10:30 AM – 1:00 PM</p>
+</div>
+
+<div class="service-card">
+<h3>Fellowships</h3>
+<p>Wed 7–8 PM</p>
+<p>Ladies Prayers: Wed 1–2 PM</p>
+<p>Ladies Fellowship: 3rd Sunday after 2nd Service</p>
+</div>
+
+<div class="service-card">
+<h3>Tuesday Online Fellowship</h3>
+<p>8 PM – 9 PM</p>
+<a class="join-btn" href="https://meet.google.com/tmj-puzg-jed" target="_blank">🔴 Join Live</a>
+</div>
+
+<div class="service-card">
+<h3>Pastor’s Day</h3>
+<p>Saturday, 10 AM – 4 PM at Pastor’s Office</p>
+</div>
+
+</div>
+</section>
+
+<section id="vision">
+<h2>Our Vision</h2>
+<p style="text-align:center;">To fulfill God’s purpose in our generation.</p>
+</section>
+
+<section id="contact">
+<h2>Contact the Pastor</h2>
+
+<form action="mailto:pastor@fgckmihango.org" method="post" enctype="text/plain">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit">Send Email</button>
+</form>
+
+<a class="join-btn" href="https://wa.me/254712345678" target="_blank">
+Message on WhatsApp
+</a>
+
+</section>
+
+<section id="giving">
+<h2>Give / Offering</h2>
+
+<div style="background:#fff; padding:20px; border-radius:10px; text-align:center; max-width:500px; margin:auto; box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+
+<h3>📱 M-Pesa Paybill</h3>
+
+<p><strong>Paybill Number:</strong><br>
+<span id="paybill" style="font-size:1.5rem; color:#1a237e;">247247</span></p>
+
+<p><strong>Account Number:</strong><br>
+<span id="account" style="font-size:1.3rem;">788538</span></p>
+
+<p><strong>Account Name:</strong><br>
+FULL GOSPEL CHURCHES OF KENYA</p>
+
+<button onclick="copyText('paybill')">Copy Paybill</button>
+<button onclick="copyText('account')">Copy Account</button>
+
+<hr>
+
+<h4>How to Give via M-Pesa</h4>
+<p>Go to M-Pesa → Lipa na M-Pesa → Paybill</p>
+<p>Enter Paybill: <strong>247247</strong></p>
+<p>Account: <strong>788538</strong></p>
+<p>Enter Amount & PIN</p>
+
+</div>
+</section>
+
+<div class="popup" id="popup">
+🔔 Tuesday Fellowship starts at 8PM
+</div>
+
+<footer>
+<p>&copy; 2026 FGCK Mihango. All rights reserved.</p>
+</footer>
+
+<script>
+// LIVE INDICATOR
+const now = new Date();
+const day = now.getDay();
+const hours = now.getHours();
+if (day === 2 && hours >= 20 && hours < 21) {
+  document.getElementById("liveText").style.display = "block";
+}
+
+// COUNTDOWN TIMER
+const next = new Date();
+next.setDate(now.getDate() + ((2 + 7 - day) % 7));
+next.setHours(20,0,0,0);
+
+function updateCountdown(){
+  const diff = next - new Date();
+  const h = Math.floor(diff/1000/60/60);
+  const m = Math.floor(diff/1000/60)%60;
+  document.getElementById("countdown").innerText =
+    "Next Fellowship in " + h + "h " + m + "m";
+}
+setInterval(updateCountdown,60000);
+updateCountdown();
+
+// COPY TO CLIPBOARD
+function copyText(id) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
+  alert("Copied: " + text);
+}
+
+// POPUP REMINDER
+setTimeout(()=>{
+  document.getElementById("popup").style.display="block";
+},5000);
+</script>
 
 </body>
 </html>
